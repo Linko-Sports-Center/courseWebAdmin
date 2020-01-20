@@ -1,7 +1,2 @@
-1. 2020-01-18 完成 ==== 報名 -> 增加報名人數, 檢查人數上限， 1-addmember.html line#779
-                               取消報名要減人數, 1-addmember.html line#630
-   
-2. 2020-01-18 繳費 -> OK 增加繳費人數, main-page line#457 和
-          OK 已報名課程 的繳費人數加 1, 1-addmember.html line#578(參考 1-addmember.html line#779)
-          OK 重置 的繳費人數減 1
+
              
