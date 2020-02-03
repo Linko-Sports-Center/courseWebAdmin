@@ -193,26 +193,27 @@ function courseUpdate() {
 
   if (!confirmReplace) {
     return 0;
-  } else {
-    var dataToReplace = [
-      courseForDetail,
-      $("#courseNameDetail").val(),
-      $("#coachNameDetail").val(),
-      $("#courseTimeDetail").val(),
-      $("#CaloriesDetail").val(),
-      $("#maxPersonsDetail").val(),
-      $("#assistNameDetail").val(),
-      $("#feeDetail").val(),
-      $("#otherDescDetail").val(),
-    ];
-
-    //console.log(dataToReplace);
-    
+  } else {  
     // TODO: 尋找 courseData 這筆資料，並取代
     for (var i =0; i< courseData.length; i++){
       //console.log(courseData[i][0]);
       if (courseData[i][0]==courseForDetail) {
+        var dataToReplace = [ 
+          courseForDetail,
+          $("#courseNameDetail").val(),
+          $("#coachNameDetail").val(),
+          $("#courseTimeDetail").val(),
+          $("#CaloriesDetail").val(),
+          $("#feeDetail").val(),          
+          $("#maxPersonsDetail").val(),
+          courseData[i][7],
+          courseData[i][8],
+          $("#assistNameDetail").val(),
+          $("#otherDescDetail").val(),          
+        ]
+        
         courseData[i] = dataToReplace;
+        //console.log(dataToReplace);
         break;
       }
     }
