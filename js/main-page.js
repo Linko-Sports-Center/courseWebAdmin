@@ -200,12 +200,12 @@ function initMainPage() {
 
     $("#courseNameDetail").val(data[1]);
     $("#coachNameDetail").val(data[2]);
-    $("#assistNameDetail").val(data[6]);
+    $("#assistNameDetail").val(data[9]);
     $("#courseTimeDetail").val(data[3]);
     $("#CaloriesDetail").val(data[4]);
-    $("#maxPersonsDetail").val(data[5]);
-    $("#feeDetail").val(data[7]);
-    $("#otherDescDetail").val(data[8]);
+    $("#maxPersonsDetail").val(data[6]);
+    $("#feeDetail").val(data[5]);
+    $("#otherDescDetail").val(data[10]);
 
     courseMember.forEach(function (item, index, array) {
       if (item[0] == data[0]) {
