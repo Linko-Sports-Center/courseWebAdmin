@@ -32,16 +32,18 @@
 
     <button class="btn-red" id="refreshMemberBtn" onclick="readMemberfromDB()" style="margin-left: 20px"><i class="fa fa-refresh"></i>&nbsp 刷新客戶</button>
 
-    <table id="memberTable" class="display" style="font-family: 'Noto Sans TC';width: 100% ">
+    <table id="memberTable" class="display" style="font-family: 'Noto Sans TC';width: 100%; margin-left: 20px ">
       <thead>
         <tr id="table-header">
-          <th style="width: 80px">姓名</th>
-<!--          <th style="width: 80px">LINE ID</th>-->
+          <th style="">姓名</th>
+<!--
+          <th style="width: 80px">LINE ID</th>
           <th style="width: 50px">性別</th>
           <th style="width: 100px">生日</th>
           <th style="width: 50px">電話</th>
           <th style="width: 80px">身分字號</th>
           <th>地址</th>
+-->
           <th style="width: 250px">操作</th>
         </tr>
       </thead>
@@ -275,31 +277,31 @@
         lengthChange: false,
         deferRender: true,
         columns: [{ //title: 姓名
-            className: "centerCell"
+            //className: "centerCell"
           },
 //          {
 //            //title: LINE ID
 //            className: "centerCell"
 //          },
-          { //title: "姓別"
-            className: "centerCell"
-          },
-          {
-            //title: "年紀"
-            className: "centerCell"
-          },
-          {
-            //title: "電話"
-            className: "centerCell"
-          },
-          {
-            //title: "身分字號"
-            className: "centerCell"
-          },
-          {
-            //title: "地址", 不對中，對左
-
-          },
+//          { //title: "姓別"
+//            className: "centerCell"
+//          },
+//          {
+//            //title: "年紀"
+//            className: "centerCell"
+//          },
+//          {
+//            //title: "電話"
+//            className: "centerCell"
+//          },
+//          {
+//            //title: "身分字號"
+//            className: "centerCell"
+//          },
+//          {
+//            //title: "地址", 不對中，對左
+//
+//          },
           {
             //title: "操作",
             data: null,

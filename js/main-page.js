@@ -222,8 +222,8 @@ function initMainPage() {
 
           // 準備 coureMemberSet 
           var dataToAdd = tmp1.slice(0, 1);  //姓名        
-          dataToAdd.push(tmp1.slice(3, 4));  //電話
-          dataToAdd.push(tmp1.slice(5, 6));  //地址        
+          // 隱藏個資 dataToAdd.push(tmp1.slice(3, 4));  //電話
+          // 隱藏個資 dataToAdd.push(tmp1.slice(5, 6));  //地址        
 
           dataToAdd.push(item1[1], item1[2]); //繳費狀態及簽到狀態
 
@@ -384,23 +384,23 @@ function initMainPage() {
     lengthChange: false,
     deferRender: true,
     columns: [{ //title: "Name"
-        className: "centerCell"
+        //className: "centerCell"
               },
 //      {
 //        //title: "LINE ID"
 //        className: "centerCell"
 //              },
-      { //title: "電話"
-        className: "centerCell"
-              },
+//      { //title: "電話"
+//        className: "centerCell"
+//              },
 //      {
 //        //title: "身分證號"
 //        className: "centerCell"
 //              },
-      {
-        //title: "地址"
-        className: "centerCell"
-              },
+//      {
+//        //title: "地址"
+//        className: "centerCell"
+//              },
       {
         //title: "繳費"
         className: "centerCell"

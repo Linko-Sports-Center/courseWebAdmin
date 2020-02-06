@@ -12,7 +12,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"Fdetail href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
   
@@ -209,14 +209,16 @@
       <button class="btn-red" onclick="courseUpdate()">更新 課程資料</button>
       <br>
      
-      <table id="courseMemberTable" class="display" style="width:100%;font-family:'Noto Sans TC'">
+      <table id="courseMemberTable" class="display" style="width:100%;font-family:'Noto Sans TC'; margin-left:20px">
         <thead>
           <tr id="table-header">
-            <th style="width: 150px">姓名</th>
-<!--            <th style="width: 100px">LINE ID</th>-->
+            <th style="">姓名</th>
+<!--
+            <th style="width: 100px">LINE ID</th>
             <th style="width: 50px">電話</th>
-<!--            <th style="width: 100px">身分證號</th>-->
+            <th style="width: 100px">身分證號</th>
             <th>地址</th>
+-->
             <th style="width: 50px">繳費</th>
             <th style="width: 50px">簽到</th>
             <th style="width: 150px">操作</th>
@@ -308,7 +310,7 @@
   <script type="text/javascript">
     var courseNum = 0; // Update from Database
     var inAddCourse = false;
-    var version = " V1.0";
+    var version = " V1.1";
 
 //    $("#titleHeader").text("林口運動中心 - 團體課程管理"+version);
     $("#titleHeader").text("團體課程管理"+version);    
