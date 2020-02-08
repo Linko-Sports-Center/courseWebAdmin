@@ -428,7 +428,7 @@ function initMainPage() {
 
     //var data = courseMemberTable.row($(this)).data();
     var data = courseMemberTable.row($(this).parents('tr')).data();    
-    console.log(data[1][0]); // data[1][0] 為電話號碼
+    //console.log(data[1]); // 繳費狀況
     
     var thisCourse;
     var thisIndex;
@@ -438,20 +438,20 @@ function initMainPage() {
         thisIndex = index;
       }
     });
-      
-      
+    
     var thisCourseLength = thisCourse.length;
     var thisI;
     for (var i = 0; i < thisCourseLength; i++) {
-      if (thisCourse[i][4] == data[1][0]) {
+      //console.log(i, thisCourse[i][0], data[0])
+      if (thisCourse[i][0] == data[0]) { //比對名字
         //console.log(thisCourse[i], thisIndex, i);
         thisI = i;
       };
     }   
  
-    //console.log(thisCourse, thisIndex, thisI, data[1][0]);
+    //console.log(thisCourse, thisIndex, thisI, data[1]);
     
-    //console.log(courseMember[thisIndex][thisI][0],courseMember[thisIndex][thisI][1]);
+    console.log(courseMember[thisIndex][thisI][0],courseMember[thisIndex][thisI][1]);
     courseMember[thisIndex][thisI][1] = "已繳費";
     
     //更新 courseData 中課程的繳費人數 加 1
@@ -462,7 +462,7 @@ function initMainPage() {
       //console.log(courseMemberSet[i][0], data[0]);
       if (courseMemberSet[i][0] == data[0]) {
         //console.log("match");
-        courseMemberSet[i][3] = "已繳費";
+        courseMemberSet[i][1] = "已繳費";
       };
     };
     
@@ -523,7 +523,7 @@ function initMainPage() {
       //console.log(courseMemberSet[i][0], data[0]);
       if (courseMemberSet[i][0] == data[0]) {
         //console.log("match");
-        courseMemberSet[i][4] = "已簽到";
+        courseMemberSet[i][2] = "已簽到";
       };
     };
     
@@ -586,8 +586,8 @@ function initMainPage() {
       //console.log(courseMemberSet[i][0], data[0]);
       if (courseMemberSet[i][1] == data[1]) {
         //console.log("match");
-        courseMemberSet[i][3] = "未繳費";
-        courseMemberSet[i][4] = "未簽到";
+        courseMemberSet[i][1] = "未繳費";
+        courseMemberSet[i][2] = "未簽到";
       };
     };
     
@@ -657,7 +657,7 @@ $('#coachList tbody').on('click', 'tr', function () {
 
 
   var data = coachList.row($(this)).data();
-  console.log(data);
+  //console.log(data);
   $("#coachName").val(data[0]);
   $("#addCourse").show();
   $("#coachTable").hide();
