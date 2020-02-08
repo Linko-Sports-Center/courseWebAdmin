@@ -368,10 +368,10 @@ function initMainPage() {
     $("#courseDate").val(dateStr[0]);
     $("#courseTime").val(dateStr[1]);
     $("#Calories").val(data[4]);
-    $("#maxPersons").val(data[5]);
-    $("#assistName").val(data[6]);
-    $("#fee").val(data[7]);
-    $("#otherDesc").val(data[8]); 
+    $("#maxPersons").val(data[6]);
+    $("#assistName").val("");
+    $("#fee").val(data[5]);
+    $("#otherDesc").val(""); 
 
     
     addCourse();
